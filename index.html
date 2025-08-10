@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Velara — AI That Brings Business to You</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <meta name="description" content="Velara — AI-driven prospecting, outreach, and booking for small service businesses. Start for free.">
+  <style>
+    :root{
+      --bg:#0A1F2E; --card:#061426; --gold:#F5B942; --muted:#9FB0C3; --white:#FFFFFF;
+      --radius:12px;
+    }
+    *{box-sizing:border-box}
+    body{font-family:'Poppins',system-ui,Arial; margin:0; background:linear-gradient(180deg,var(--bg),#072033); color:var(--white); -webkit-font-smoothing:antialiased}
+    .wrap{max-width:1100px;margin:32px auto;padding:20px}
+    header{display:flex;gap:16px;align-items:center;justify-content:space-between}
+    .brand{display:flex;gap:12px;align-items:center}
+    .logo{width:64px;height:64px;background:transparent;display:flex;align-items:center;justify-content:center}
+    h1{margin:0;font-size:28px;color:var(--gold);letter-spacing:0.2px}
+    .tag{color:var(--muted);margin-top:6px}
+    nav a{color:var(--muted);text-decoration:none;margin-left:16px;font-weight:600}
+    /* hero */
+    .hero{display:flex;gap:28px;align-items:center;margin-top:28px}
+    .hero-left{flex:1}
+    .eyebrow{font-size:13px;color:var(--muted);text-transform:uppercase;letter-spacing:1px}
+    .headline{font-size:36px;margin:8px 0 6px;line-height:1.02}
+    .lead{color:var(--muted);max-width:64ch}
+    .cta-row{margin-top:18px;display:flex;gap:12px;flex-wrap:wrap}
+    .btn{background:var(--gold);color:var(--bg);padding:12px 18px;border-radius:10px;text-decoration:none;font-weight:700}
+    .btn-ghost{background:transparent;border:1px solid rgba(245,185,66,0.18);color:var(--white);padding:10px 14px;border-radius:10px;text-decoration:none}
+    .hero-right{flex:0 0 380px;background:linear-gradient(180deg,var(--card),rgba(255,255,255,0.02));padding:16px;border-radius:16px;box-shadow:0 12px 30px rgba(2,6,23,0.5)}
+    .stat{display:flex;justify-content:space-between;align-items:center}
+    .stat h3{margin:6px 0 0}
+    /* features */
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:28px}
+    .card{background:rgba(255,255,255,0.03);padding:16px;border-radius:12px}
+    .muted{color:var(--muted)}
+    /* pricing */
+    .pricing{display:flex;gap:12px;margin-top:20px}
+    .price-card{flex:1;padding:16px;border-radius:12px;background:rgba(245,185,66,0.06)}
+    .price{font-size:24px;font-weight:800;color:var(--gold)}
+    footer{margin-top:36px;color:var(--muted);text-align:center;padding-bottom:40px;font-size:14px}
+    /* responsive */
+    @media (max-width:900px){
+      .hero{flex-direction:column}
+      .grid{grid-template-columns:1fr}
+      .hero-right{width:100%}
+      nav{display:none}
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="brand">
+        <div class="logo" aria-hidden="true">
+          <!-- Inline Velara SVG logo -->
+          <svg viewBox="0 0 64 64" width="64" height="64" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Velara logo">
+            <defs>
+              <linearGradient id="g" x1="0" x2="1"><stop offset="0" stop-color="#F5B942"/><stop offset="1" stop-color="#F3A832"/></linearGradient>
+            </defs>
+            <rect width="64" height="64" rx="12" fill="#071829"/>
+            <g transform="translate(12,12)" fill="none" stroke="url(#g)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M8 28 C18 4 28 4 36 28" />
+              <path d="M14 28 C22 12 30 12 38 28" opacity="0.9"/>
+            </g>
+            <circle cx="50" cy="14" r="3" fill="#F5B942" />
+          </svg>
+        </div>
+        <div>
+          <h1>Velara</h1>
+          <div class="tag">AI That Brings Business to You</div>
+        </div>
+      </div>
+
+      <nav>
+        <a href="#features">Features</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main class="hero" role="main">
+      <div class="hero-left">
+        <div class="eyebrow">Zero-cost launch • Built with free tools</div>
+        <h2 class="headline">Automated prospecting, outreach, and booking — on autopilot</h2>
+        <p class="lead">Velara uses smart templates and simple Google-tool automation to find prospects, send personalized outreach, and book calls — no subscriptions required to start.</p>
+
+        <div class="cta-row">
+          <a class="btn" href="YOUR_GOOGLE_FORM_LINK" id="cta-primary">Start free trial</a>
+          <a class="btn-ghost" href="#pricing">See pricing</a>
+        </div>
+
+        <div style="margin-top:18px;color:var(--muted)"><strong>Suggested launch domain (optional):</strong> velara-site.github.io</div>
+      </div>
+
+      <aside class="hero-right" aria-labelledby="statsTitle">
+        <div id="statsTitle" style="font-weight:700">Quick stats (example)</div>
+        <div style="margin-top:12px" class="stat">
+          <div>
+            <div style="font-size:20px;font-weight:700">+15%</div>
+            <div class="muted">average conversion lift (pilot)</div>
+          </div>
+          <div>
+            <div style="font-size:20px;font-weight:700">2–4 wks</div>
+            <div class="muted" style="text-align:right">to production</div>
+          </div>
+        </div>
+
+        <div style="margin-top:14px" class="card">
+          <h4 style="margin:0">Starter offer</h4>
+          <p class="muted" style="margin-top:6px">Free 14-day trial → then optional $49/mo starter plan. You only pay after you see booked appointments.</p>
+        </div>
+      </aside>
+    </main>
+
+    <section id="features" class="grid" aria-label="Features">
+      <div class="card">
+        <h4>Lead capture</h4>
+        <p class="muted">Collect prospects with Google Forms and simple search workflows.</p>
+      </div>
+      <div class="card">
+        <h4>AI outreach</h4>
+        <p class="muted">Personalized messages generated with ChatGPT templates you control.</p>
+      </div>
+      <div class="card">
+        <h4>Booking automation</h4>
+        <p class="muted">Self-scheduling via Google Calendar appointment links and Apps Script.</p>
+      </div>
+    </section>
+
+    <section id="pricing" style="margin-top:22px">
+      <h3 style="margin:0 0 10px 0">Pricing (suggested)</h3>
+      <div class="pricing">
+        <div class="price-card">
+          <div style="display:flex;justify-content:space-between;align-items:center">
+            <div>
+              <div style="font-weight:700">Starter</div>
+              <div class="muted">14-day free trial</div>
+            </div>
+            <div class="price">$49</div>
+          </div>
+          <p class="muted" style="margin-top:10px">1 campaign, up to 1,000 leads/month, basic reporting.</p>
+        </div>
+
+        <div class="price-card" style="background:rgba(255,255,255,0.02)">
+          <div style="display:flex;justify-content:space-between;align-items:center">
+            <div>
+              <div style="font-weight:700">Growth</div>
+              <div class="muted">Best value</div>
+            </div>
+            <div class="price">$149</div>
+          </div>
+          <p class="muted" style="margin-top:10px">Up to 5 campaigns, lead enrichment, priority onboarding.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" style="margin-top:28px">
+      <div style="display:flex;gap:16px;flex-wrap:wrap;align-items:center;justify-content:space-between">
+        <div style="flex:1;min-width:260px">
+          <h3 style="margin:0">Get started</h3>
+          <p class="muted" style="margin-top:6px">Fill the quick onboarding form and we’ll set up your first campaign.</p>
+          <a class="btn" href="YOUR_GOOGLE_FORM_LINK">Start onboarding</a>
+        </div>
+        <div style="flex:1;min-width:260px">
+          <h4 style="margin:0">Contact</h4>
+          <p class="muted" style="margin-top:6px">Email: <a href="mailto:hello@velara.example" style="color:var(--gold);text-decoration:none">hello@velara.example</a></p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div>© Velara — AI That Brings Business to You</div>
+      <div style="margin-top:8px" class="muted">Built with free tools • Google Forms • Google Sheets • Gmail</div>
+    </footer>
+  </div>
+
+  <script>
+    (function(){
+      const cta = document.getElementById('cta-primary');
+      if(cta){
+        cta.target = '_blank';
+        cta.rel = 'noopener noreferrer';
+      }
+    })();
+  </script>
+</body>
+</html>
